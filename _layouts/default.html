@@ -1,14 +1,32 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Article">
 
   <head>
     <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>BGV.productions</title>
+    <title>{{ site.title }}</title>
 
-    <meta name="description" content="Producing Bundles of Joy">
-    <meta itemprop="image" content="/assets/public_logo.png">
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.description }}">
+    <meta itemprop="image" content="{{ site.image }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="{{ site.image }}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:image" content="{{ site.image }}" />
+    <meta property="og:description" content="{{ site.description }}" />
 
     <link rel="stylesheet" href="/assets/main.css">
 
