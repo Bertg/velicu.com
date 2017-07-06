@@ -22,9 +22,9 @@
   <div class="col-md-6 col-sm-12">
     <dl class="row">
       <dt class="col-6">Gender</dt>
-      <dd class="col-6">Unkown</dd>
-      <dt class="col-6">Size</dt>
-      <dd class="col-6">Blueberry</dd>
+      <dd class="col-6">Known</dd>
+      <dt class="col-6">Current Size</dt>
+      <dd class="col-6" id="babySize"></dd>
     </dl>
   </div>
 </div>
@@ -47,7 +47,7 @@
     <div class="d-flex justify-content-end">
       <div class="mr-auto p-2">
         <span class="btn btn-sm">
-          <strong>ETA</strong>  Jan 10th 2018.
+          <strong>ETA</strong>  Jan 12th 2018.
         </span>
       </div>
       <div class="p-2">
@@ -101,11 +101,12 @@
 <script type="text/javascript">
   var dayInMilis = 1000 * 60 * 60 * 24,
     initDate = (new Date(2017, 3, 11)) / dayInMilis, // Dates are month 0-based
-    deliveryDate = (new Date(2018, 0, 10)) / dayInMilis, // Dates are month 0-based
+    deliveryDate = (new Date(2018, 0, 12)) / dayInMilis, // Dates are month 0-based
     today = Date.now() / dayInMilis;
 
   var totalDays = Math.round(deliveryDate - initDate),
-    currentDays = Math.round(today - initDate);
+    currentDays = Math.round(today - initDate),
+    currentWeeks = Math.round(currentDays / 7);
 
   var progressBar = document.getElementById('progress');
 
@@ -113,6 +114,48 @@
   progressBar.setAttribute("aria-valuenow", currentDays);
   progressBar.style.width = "" + ((currentDays / totalDays) * 100) + "%";
 
-  document.getElementById('week').textContent = "Week " + Math.round(currentDays / 7) + "-ish";
+  document.getElementById('week').textContent = "Week " + currentWeeks + "-ish";
+
+  var babySizes = [
+    'Poppy seed',
+    'Sesame seed',
+    'Lentil',
+    'Blueberry',
+    'Kidney bean',
+    'Grape',
+    'Prune',
+    'Fig',
+    'Lime',
+    'Peach',
+    'Lemon',
+    'Apple',
+    'Avocado',
+    'Turnip',
+    'Bell pepper',
+    'Heirloom tomato',
+    'Banana',
+    'Carrot',
+    'Spaghetti squash',
+    'Large mango',
+    'Ear of corn',
+    'Rutabaga',
+    'Scallion',
+    'Head of cauliflower',
+    'Large eggplant',
+    'Butternut squash',
+    'Large cabbage',
+    'Coconut',
+    'Squash',
+    'Pineapple',
+    'Cantaloupe',
+    'Honeydew melon',
+    'Romaine lettuce',
+    'Swiss chard',
+    'Leek',
+    'Mini-watermelon',
+    'Small pumpkin',
+  ]
+  document.getElementById('babySize').textContent = babySizes[currentWeeks - 4];
+
 
 </script>
