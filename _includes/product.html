@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="logo text-center">
+    <img src="/assets/logo_1.svg" />
+    BGV<small>.productions</small>
+  </h1>
+
+  <div class="clearfix">
+    <div class="float-left">
+      <img src="/assets/img/IMG_6081.jpg" alt="" class="rounded-circle" height="50">
+    </div>
+    <div class="alert alert-success" style="margin-left: 60px;">
+      {% if page.announcement %}
+        {{ page.announcement }}
+      {% else %}
+        Gabriela &amp; Bert are proud to announce Baby 1.0. See the product details and latest news below!
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div style="padding: 1em 0;" class="bg-success">
+  <div class="container">
+    {% include details.html %}
+  </div>
+</div>
+
+<div class="container" style="margin-bottom: 2em;">
+  {% include posts.html %}
+</div>

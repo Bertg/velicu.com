@@ -1,0 +1,23 @@
+{% for post in site.posts %}
+  <div class="card" style="margin-top: 32px;">
+    {% if post.image %}
+      <img class="card-img-top" src="/assets/img/{{ post.image }}" alt="Card image cap">
+    {% endif %}
+    <div class="card-header">
+      {{post.title}}
+      {% if post.week %}
+        <span class="badge badge-primary">week {{post.week}}</span>
+      {% endif %}
+      <div class="float-right">
+        <time datetime="{{post.date | date_to_xmlschema}}">
+          <small>{{post.date | date_to_string}}</small>
+        </time>
+      </div>
+    </div>
+    {% if post.content.size > 1 %}
+      <div class="card-block">
+        {{ post.content }}
+      </div>
+    {% endif %}
+  </div>
+{% endfor %}

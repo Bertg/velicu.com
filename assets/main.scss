@@ -1,0 +1,53 @@
+---
+---
+
+$green:  #74AF10 !default;
+$state-success-text:            darken(#74AF10, 20%) !default;
+$state-success-bg:              lighten(#94C93C, 20%) !default;
+$state-success-border:          $state-success-text;
+
+$brand-primary:                 #FC451E;
+$card-cap-bg:                   $green;
+$card-border-color:             #94C93C;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 720px,
+  xl: 721px
+) !default;
+
+@import "bootstrap/bootstrap";
+
+.card-header {
+  color: #FFF;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.logo {
+  color: $black !important;
+  text-decoration: none !important;
+  margin: 1em 0;
+  letter-spacing: 0.25em;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.logo a {
+  color: $black !important;
+  text-decoration: none !important;
+}
+
+.logo small {
+  text-decoration: none !important;
+  font-variant: small-caps;
+  font-size: 60%;
+  letter-spacing: 0.3em;
+}
+.logo img {
+  height: 2em;
+  display: inline-block;
+}
