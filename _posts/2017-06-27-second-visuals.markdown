@@ -1,7 +1,7 @@
 ---
 title:  Second Product Visuals
 date:   2017-06-27
-image: IMG_0004.jpg
+image: IMG_0004.png
 week: 12
 ---
 
