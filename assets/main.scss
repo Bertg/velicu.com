@@ -70,3 +70,12 @@ footer {
     color: #999;
   }
 }
+
+.card .card-block .extra-images {
+  text-align: center;
+  img.extra {
+    width: 45%;
+    display: inline;
+    padding: 2%;
+  }
+}
