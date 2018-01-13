@@ -1,0 +1,97 @@
+---
+---
+<style media="screen">
+  html, body {
+    height: 80%;
+  }
+  body {
+    display:flex;
+    align-items:center;
+    background-color: #b75146;
+    padding-top: 100px;
+  }
+  #wolf-container {
+    height: 260px;
+  }
+  @keyframes breath {
+    0%  {
+      width: 200px;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.65));
+
+    }
+    50% {
+      width: 205px;
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.70));
+    }
+    100% {
+      width: 200px;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.65));
+    }
+  }
+  #wolf-logo {
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.75));
+    width: 200px;
+    animation-name: breath;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  #wolf-name img {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+  }
+  .bgv-about {
+    display: inline-block;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    transition: background-color 1s;
+  }
+  .bgv-about .logo {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin:15px;
+  }
+  .bgv-about .logo path {
+    fill: #b75146;
+    transition: fill 1s;
+  }
+  .bgv-about:hover {
+    background-color: #b75146;
+  }
+  .bgv-about:hover .logo path {
+    fill: #FFF;
+  }
+
+</style>
+
+<div class="container">
+
+  <div id="wolf-container">
+    <img id="wolf-logo" src="/assets/wolf_logo.png" />
+  </div>
+
+  <h1 id="wolf-name">
+    <img alt="Wolf Alexander" src="/assets/wolf_name.png" height="110" />
+  </h1>
+
+  <p>
+    Delivery date and details to be announced.
+  </p>
+
+  <footer>
+    <a class="bgv-about" href='/about' title="about">
+      <img class="logo svg" src="/assets/logo_1.svg" alt="about" />
+    </a>
+  </footer>
+
+</div>
