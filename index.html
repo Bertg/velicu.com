@@ -8,45 +8,22 @@
     display:flex;
     align-items:center;
   }
+  p {
+    text-align: center;
+  }
 </style>
 
 <div class="container">
-  <h1 class="logo text-center" style="margin-top: 0;">
-    <img src="/assets/logo_0.svg" />
+  <h1 class="logo logo-large text-center" style="margin-top: 0;">
+    <img src="/assets/logo_1.svg" />
     BGV<small>.productions</small>
   </h1>
 
-  <p>
-    Gabriela &amp; Bert would like to present their
-    first product announcement.
-  </p>
-
-  <form class="" action="" method="POST">
-    <div class="input-group input-group-lg">
-      <input name="productCode" type="text" class="form-control" placeholder="Please enter your personal tracking code" aria-describedby="sizing-addon1">
-      <span class="input-group-btn">
-        <button class="btn btn-primary" type="submit">Go!</button>
-      </span>
-    </div>
-  </form>
-  <p style="margin-top: 1em;">
-    Didn't receive a product code? <a href="/request"> Request one here </a>
-  </p>
   <footer>
+    <p class="small">
+      A Gabriela Velicu &amp; Bert Goethals collaboration
+    </p>
     <a href="/about">About</a>
   </footer>
 
-  <script type="text/javascript">
-    $('form').on('submit', function(e) {
-      e.preventDefault();
-      var code = $("input[name=productCode]").val();
-
-      if (code && code !== '') {
-        debugger
-        window.location.href = "/products/" + code;
-      } else {
-
-      }
-    })
-  </script>
 </div>

@@ -6,7 +6,7 @@ $state-success-text:            darken(#74AF10, 20%) !default;
 $state-success-bg:              lighten(#94C93C, 20%) !default;
 $state-success-border:          $state-success-text;
 
-$brand-primary:                 #FC451E;
+$brand-primary:                 $green;
 $card-cap-bg:                   $green;
 $card-border-color:             #94C93C;
 
@@ -35,6 +35,13 @@ img {
   letter-spacing: 0.25em;
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   font-size: 2rem;
+
+  &.logo-large {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (min-width: map-get($grid-breakpoints, 'md') ) {
