@@ -12,20 +12,20 @@
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{ page.title }}">
     <meta itemprop="description" content="{{ page.description }}">
-    <meta itemprop="image" content="{{ page.image }}">
+    <meta itemprop="image" content="{{ page.image | absolute_url }}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <meta name="twitter:image:src" content="{{ page.image }}">
+    <meta name="twitter:image:src" content="{{ page.image | absolute_url }}">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="product" />
-    <meta property="og:url" content="{{ page.url }}" />
-    <meta property="og:image" content="{{ page.image }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url  | remove: '.html' }}" />
+    <meta property="og:image" content="{{ page.image | absolute_url }}" />
     <meta property="og:description" content="{{ page.description }}" />
 
     <link rel="stylesheet" href="/assets/main.css">
