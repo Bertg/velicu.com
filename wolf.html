@@ -2,13 +2,13 @@
 ---
 <style media="screen">
   html, body {
-    height: 80%;
+    font-family: "Times New Roman", Times, serif;
   }
   body {
     display:flex;
     align-items:center;
     background-color: #b75146;
-    padding-top: 100px;
+    padding-top: 20px;
   }
   #wolf-container {
     height: 270px;
@@ -49,6 +49,7 @@
   p {
     color: #fff;
     text-align: center;
+    font-variant: small-caps;
   }
   .bgv-about {
     display: inline-block;
@@ -75,21 +76,80 @@
   .bgv-about:hover .logo path {
     fill: #FFF;
   }
+  .stamp-label {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 0
+  }
+  .stamp-box {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  .stamp-box dl {
+    margin-bottom: 0;
+  }
+  .stamp-box dl dt {
+    text-align: right;
+    font-weight: normal;
+  }
+  .stamp-box dl dd {
+    text-align: left;
+    margin-bottom: 0.15rem;
+  }
+  .stamp-box dl dd:last-child {
+    margin-bottom: 0;
+  }
 
 </style>
 
 <div class="container">
 
-  <div id="wolf-container">
-    <img id="wolf-logo" src="/assets/wolf_logo.png" />
+  <p>
+    Project Managers and enthousiastic parents Gabriela Velicu and Bert Goethals
+    announce the delivery of their best product to date:
+  </p>
+
+  <div id="wolf-brand">
+    <div id="wolf-container">
+      <img id="wolf-logo" src="/assets/wolf_logo.png" />
+    </div>
+
+    <h1 id="wolf-name">
+      <img alt="Wolf Alexander" src="/assets/wolf_name.png" height="110" />
+    </h1>
   </div>
 
-  <h1 id="wolf-name">
-    <img alt="Wolf Alexander" src="/assets/wolf_name.png" height="110" />
-  </h1>
-
+  <div class="row">
+    <div class="col">
+      <div  class="stamp-label">Delivery Date</div>
+      <div class="stamp-box">
+        <div id="date">
+          19 Jan 2018
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div  class="stamp-label">Specifications</div>
+      <div class="stamp-box">
+        <dl class="row">
+          <dt class="col-sm-4">Location</dt>
+          <dd class="col-sm-8">Gent</dd>
+          <dt class="col-sm-4">Weight</dt>
+          <dd class="col-sm-8">4000 g</dd>
+          <dt class="col-sm-4">Size</dt>
+          <dd class="col-sm-8">5300 mm</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <br />
   <p>
-    Delivery date and details to be announced.
+    Play testing of baby can be aranged. Contact project managers for details.
+  </p>
+  <p>
+    Further product developement can be supported with a generous donation.
   </p>
 
   <footer>
