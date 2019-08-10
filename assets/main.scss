@@ -86,3 +86,16 @@ footer {
     padding: 2%;
   }
 }
+
+a.wolf, span.wolf, a.arend, span.arend {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+a.wolf, span.wolf {
+  border-bottom: 2px solid #74AF10;
+}
+a.arend, span.arend {
+  border-bottom: 2px solid #FFD500;
+}
