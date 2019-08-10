@@ -27,6 +27,6 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-      title: BGV.productions
+      title: Velicu.com
       description: Producing Bundles of Joy
       image: /assets/public_logo.png
