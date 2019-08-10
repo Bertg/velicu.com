@@ -19,6 +19,12 @@ $container-max-widths: (
 
 @import "bootstrap/bootstrap";
 
+@font-face {
+	font-family: 'BrushScriptStd';
+	src: url('./BrushScriptStd.eot');
+	src: local('BrushScriptStd'), url('./BrushScriptStd.woff') format('woff'), url('./BrushScriptStd.ttf') format('truetype');
+}
+
 .card-header {
   color: #FFF;
 }

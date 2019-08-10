@@ -1,0 +1,183 @@
+---
+title: Arend Raphael | Velicu.com
+description: The second bundle of joy
+image: /assets/public_logo_arend.png
+---
+<style media="screen">
+  html, body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+  }
+  body {
+    display:flex;
+    --background-color: #69b077;
+    align-items:center;
+    background-color: var(--background-color);
+    background-image: url('/assets/arend_background_pattern.jpg');
+    background-blend-mode: multiply;
+    background-size: 35%;
+    padding-top: 20px;
+  }
+  #arend-container {
+    height: 270px;
+  }
+  @keyframes breath {
+    0%  {
+      height: 266px;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.65));
+
+    }
+    50% {
+      height: 273px;
+      filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.70));
+    }
+    100% {
+      height: 266px;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.65));
+    }
+  }
+  #arend-logo {
+    display: block;
+    margin: 0 auto;
+    height: 266px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.75));
+    animation-name: breath;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+  }
+  #arend-name::before {
+    display: block;
+    content: 'Arend Raphael';
+    font-family: 'BrushScriptStd', sans-serif;
+    font-style: normal;
+    font-size: 75px;
+    color: #FFC56B;
+    text-align: center;
+    -webkit-text-stroke: 13px #FFF;
+    margin-bottom: -82.5px;
+  }
+  #arend-name {
+    font-family: 'BrushScriptStd', sans-serif;
+    font-style: normal;
+    font-size: 75px;
+    color: #FFC56B;
+    text-align: center;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.65));
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-variant: small-caps;
+  }
+  .bgv-about {
+    display: inline-block;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    transition: background-color 1s;
+  }
+  .bgv-about .logo {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin:15px;
+  }
+  .bgv-about .logo path {
+    fill: var(--background-color);
+    transition: fill 1s;
+  }
+  .bgv-about:hover {
+    background-color: var(--background-color);
+  }
+  .bgv-about:hover .logo path {
+    fill: #FFF;
+  }
+  p, .stamp-label {
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
+  }
+  .stamp-label {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 0;
+  }
+  .stamp-box {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.65);
+  }
+  .stamp-box dl {
+    margin-bottom: 0;
+  }
+  .stamp-box dl dt {
+    text-align: right;
+    font-weight: normal;
+  }
+  .stamp-box dl dd {
+    text-align: left;
+    margin-bottom: 0.15rem;
+  }
+  .stamp-box dl dd:last-child {
+    margin-bottom: 0;
+  }
+
+</style>
+
+<div class="container">
+
+  <p>
+    Still enthusiastic parents Gabriela and Bert and hyperkinetic ball of energy Wolf are excited to announce a new fledgling in the family
+  </p>
+
+  <div id="arend-brand">
+    <div id="arend-container">
+      <img id="arend-logo" src="/assets/arend_logo.png" />
+    </div>
+
+    <h1 id="arend-name">
+      Arend Raphael
+    </h1>
+
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div  class="stamp-label">Delivery Date</div>
+      <div class="stamp-box">
+        <div id="date">
+          TBA
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div  class="stamp-label">Specifications</div>
+      <div class="stamp-box">
+        <dl class="row">
+          <dt class="col-sm-4">Location</dt>
+          <dd class="col-sm-8">TBA</dd>
+          <dt class="col-sm-4">Weight</dt>
+          <dd class="col-sm-8">TBA</dd>
+          <dt class="col-sm-4">Size</dt>
+          <dd class="col-sm-8">TBA</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <br />
+  <p>
+    Visiting the hatchling in its nest is welcomed. Please contact the caretakers for instructions.
+  </p>
+  <p>
+    Donations for the flight school fund are welcomed.
+  </p>
+
+  <footer>
+    <a class="bgv-about" href='/about' title="about">
+      <img class="logo svg" src="/assets/logo_2.svg" alt="about" />
+    </a>
+  </footer>
+
+</div>
