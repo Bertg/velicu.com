@@ -6,6 +6,7 @@ image: /assets/public_logo_wolf.png
 <style media="screen">
   html, body {
     font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
   }
   body {
     display:flex;
@@ -45,9 +46,23 @@ image: /assets/public_logo_wolf.png
     animation-iteration-count: infinite;
     animation-fill-mode: both;
   }
-  #wolf-name img {
+  #wolf-name::before {
     display: block;
-    margin: 0 auto;
+    content: 'Wolf Alexander';
+    font-family: 'BrushScriptStd', sans-serif;
+    font-style: normal;
+    font-size: 75px;
+    color: #FFC56B;
+    text-align: center;
+    -webkit-text-stroke: 13px #FFF;
+    margin-bottom: -82.5px;
+  }
+  #wolf-name {
+    font-family: 'BrushScriptStd', sans-serif;
+    font-style: normal;
+    font-size: 75px;
+    color: #FFC56B;
+    text-align: center;
   }
   p {
     color: #fff;
@@ -120,7 +135,7 @@ image: /assets/public_logo_wolf.png
     </div>
 
     <h1 id="wolf-name">
-      <img alt="Wolf Alexander" src="/assets/wolf_name.png" height="110" />
+      Wolf Alexander
     </h1>
   </div>
 
@@ -148,9 +163,6 @@ image: /assets/public_logo_wolf.png
     </div>
   </div>
   <br />
-  <p>
-    Play testing of baby can be aranged. Contact project managers for details.
-  </p>
   <p>
     Further product developement can be supported with a generous donation.
   </p>
