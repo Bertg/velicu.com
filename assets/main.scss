@@ -73,12 +73,11 @@ img {
 }
 
 footer {
+  display: block;
   text-align: center;
   font-size: 0.8em;
   color: #999;
-  margin-top: 2em;
-  margin-bottom: 2em;
-
+  overflow: hidden;
   a {
     color: #999;
   }
@@ -105,6 +104,6 @@ a.wolf, span.wolf {
 a.arend, span.arend {
   border-bottom: 2px solid #FFD500;
 }
-a.next, span.next {
-  border-bottom: 2px solid #5790da;
+a.next, span.next, a.raven, span.raven {
+  border-bottom: 2px solid #034380;
 }
